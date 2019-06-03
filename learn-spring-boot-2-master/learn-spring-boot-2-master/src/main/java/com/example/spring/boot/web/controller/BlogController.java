@@ -28,7 +28,7 @@ public class BlogController {
     @GetMapping("/find")
     public Flux<Blog> findByTitle(@RequestParam String blogTitle) {
        
-        return blogService.findByTitle(blogTitle).;
+        return blogService.findByTitle(blogTitle);
     }
 
     @GetMapping("/{id}")
